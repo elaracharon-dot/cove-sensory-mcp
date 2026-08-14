@@ -1,0 +1,26 @@
+{
+  "name": "cove-sensory-mcp-remote",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "cf-types": "wrangler types",
+    "deploy": "wrangler deploy",
+    "deploy:dry": "wrangler deploy --dry-run"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.29.0",
+    "agents": "0.16.2",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260621.1",
+    "@types/node": "^25.0.0",
+    "typescript": "^5.9.0",
+    "vitest": "^4.0.0",
+    "wrangler": "^4.103.0"
+  }
+}
